@@ -1,2 +1,2 @@
 # lucirte-graciela-andres
-este es el repositorio del desafio
+Este repositorio corresponde al proyecto de Lucirte
