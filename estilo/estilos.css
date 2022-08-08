@@ -48,6 +48,7 @@ header nav {
 
 header nav ul {
     list-style: none;
+    display: flex;
 }
 
 header nav ul li a {
