@@ -17,10 +17,6 @@ body {
 
 /*..HEADER..*/
 
-header {
-    position: fixed;
-    z-index: 10px;
-}
 
 header nav {
     display: flex;
@@ -90,13 +86,18 @@ header nav ul li a {
     background-color: rgb(80, 7, 19);
     padding: 10px;
 }
-  .tamano {
+
+.tamano {
     width: 100%;
-    height: 500px; 
-  }
-.productos {
-    /* margin-top: 50%; */
+    height: 500px;
 }
+
+.productos {
+    margin-top: 50%;
+    text-align: center;
+}
+
+/* margin-top: 50%; */
 
 .productos>div {
     display: flex;
@@ -151,19 +152,38 @@ header nav ul li a {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 15px;
+
+    /*ultimo arreglo falta chequear*/
+    @media screen {
+
+        max-width: 578px;
+
+        .galeria {
+            grid-template-columns: (1fr);
+        }
+
+    }
+
 }
 
 .galeria div img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
 }
-
-.img-4 {
-    grid-row-start: span 2;
+.dulce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*..FOOTER 1:35 masterclass..*/
+.h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 20px;
+    font-size: 30px;
+}
+/*..FOOTER..*/
 
 footer {
     text-align: center;
@@ -174,3 +194,46 @@ footer {
 
 
 /*...........Media query........*/
+@media screen and (max-width:950px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .grid-container {
+        grid-column: span;
+        grid-row: span;
+    }
+}
+
+@media screen and (max-width:675px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:579px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
