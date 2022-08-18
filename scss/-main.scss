@@ -1,0 +1,110 @@
+/*main-index*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(255, 0, 0, 0.274)), url(../images/aritos.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(75, 8, 19);
+
+    h1 {
+        font-family: 'PT Mono', monospace;
+        font-weight: 400px;
+        font-size: 80px;
+        /*line-height: 80px*/
+        border: 2px solid rgb(75, 8, 19);
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(247, 104, 128);
+        background-color: rgb(80, 7, 19);
+        padding: 10px;
+    }
+}
+
+.productos {
+    margin-top: auto;
+    text-align: center;
+
+    >div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+
+        h2 {
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+        }
+
+        div div {
+            border: 1px solid gray;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            background-color: rgb(80, 7, 19);
+            color: rgb(247, 104, 128);
+            margin-top: 20px;
+
+            div div img {
+                width: 100%;
+                height: 300px;
+
+                 div h3 {
+                    margin-bottom: 10px;
+
+                }
+                 div a {
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    font-weight: 900;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+}
+.galeria {
+    width: 100%;
+    height: 1100px;
+    margin-top: 40px;
+    display: grid;
+    grid-auto-rows: 300px;
+    gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+
+    .galeria div img {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        object-fit: cover;
+        grid-auto-rows: 250px;
+        gap: 15px;
+    }
+    
+}
+/*main-Productos*/
+/*main-Nosotros(boostrap)*/
+/*main-Galeria*/
+/*main-Contactos*/
+
+
+
